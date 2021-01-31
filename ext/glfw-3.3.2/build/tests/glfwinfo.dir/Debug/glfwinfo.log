@@ -1,0 +1,7 @@
+﻿  Building Custom Rule C:/Users/Lars/Documents/Repos/game-engine-opengl/glfw-3.3.2/tests/CMakeLists.txt
+  glfwinfo.c
+  getopt.c
+  glad_gl.c
+  glad_vulkan.c
+  Generating Code...
+  glfwinfo.vcxproj -> C:\Users\Lars\Documents\Repos\game-engine-opengl\glfw-3.3.2\build\tests\Debug\glfwinfo.exe
