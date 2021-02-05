@@ -27,9 +27,6 @@
     <ClCompile Include="Shader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="shader.frag">
-      <Filter>Shaders</Filter>
-    </ClCompile>
     <ClCompile Include="Camera.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -47,6 +44,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="shader.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="shader.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="light.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="light.vert">
       <Filter>Shaders</Filter>
     </None>
   </ItemGroup>

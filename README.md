@@ -1,6 +1,6 @@
 # OpenGL Game Engine
 
-![image](image.png)
+![image](readme/image.png)
 
 This repository contains an attempt to write a game engine with OpenGL with C++.
 I barely know C++ and OpenGL, so with this project I'm learning those things.
@@ -20,8 +20,18 @@ The following functionality has currently been implemented.
  * Key handling to move the camera (WASD, Shift, Space, Esc).
  * Mouse handling for a 'FPS style' camera.
  * Mouse scrolling for zooming.
+ * A single light with Phong shading.
 
 It currently renders 10 different cubes, which come from the same geometry, which is changed with the model matrix before rendering.
+
+# Updates
+## Lights & Phong lighting model
+
+Implemented another shader to render the light source, and altered the original shader to use a Phong lighting model. The shading is based on the light and object color.
+
+![Phong lighting model](readme/image2.png)
+
+Next stop is to implement materials!
 
 ## Set up
 

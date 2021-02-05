@@ -1,15 +1,44 @@
-﻿glfw3.lib(context.obj) : warning LNK4099: PDB 'glfw.pdb' was not found with 'glfw3.lib(context.obj)' or at 'C:\Users\Lars\Documents\Repos\game-engine-opengl\src\x64\Debug\glfw.pdb'; linking object as if no debug info
-glfw3.lib(init.obj) : warning LNK4099: PDB 'glfw.pdb' was not found with 'glfw3.lib(init.obj)' or at 'C:\Users\Lars\Documents\Repos\game-engine-opengl\src\x64\Debug\glfw.pdb'; linking object as if no debug info
+﻿  main.cpp
+C:\Users\Lars\Documents\Repos\game-engine-opengl\include\glm\detail\type_vec2.hpp(45,1): warning C4201: nonstandard extension used: nameless struct/union
+C:\Users\Lars\Documents\Repos\game-engine-opengl\include\glm\detail\type_vec2.hpp(206): message : see reference to class template instantiation 'glm::tvec2<T,P>' being compiled
+C:\Users\Lars\Documents\Repos\game-engine-opengl\include\glm\detail\type_vec2.hpp(46,1): warning C4201: nonstandard extension used: nameless struct/union
+C:\Users\Lars\Documents\Repos\game-engine-opengl\include\glm\detail\type_vec2.hpp(47,1): warning C4201: nonstandard extension used: nameless struct/union
+C:\Users\Lars\Documents\Repos\game-engine-opengl\include\glm\detail\type_vec3.hpp(45,1): warning C4201: nonstandard extension used: nameless struct/union
+C:\Users\Lars\Documents\Repos\game-engine-opengl\include\glm\detail\type_vec3.hpp(227): message : see reference to class template instantiation 'glm::tvec3<T,P>' being compiled
+C:\Users\Lars\Documents\Repos\game-engine-opengl\include\glm\detail\type_vec3.hpp(46,1): warning C4201: nonstandard extension used: nameless struct/union
+C:\Users\Lars\Documents\Repos\game-engine-opengl\include\glm\detail\type_vec3.hpp(47,1): warning C4201: nonstandard extension used: nameless struct/union
+C:\Users\Lars\Documents\Repos\game-engine-opengl\include\glm\detail\type_vec4.hpp(45,1): warning C4201: nonstandard extension used: nameless struct/union
+C:\Users\Lars\Documents\Repos\game-engine-opengl\include\glm\detail\type_vec4.hpp(272): message : see reference to class template instantiation 'glm::tvec4<T,P>' being compiled
+C:\Users\Lars\Documents\Repos\game-engine-opengl\include\glm\detail\type_vec4.hpp(46,1): warning C4201: nonstandard extension used: nameless struct/union
+C:\Users\Lars\Documents\Repos\game-engine-opengl\include\glm\detail\type_vec4.hpp(47,1): warning C4201: nonstandard extension used: nameless struct/union
+C:\Users\Lars\Documents\Repos\game-engine-opengl\include\glm\gtc\quaternion.hpp(56,1): warning C4201: nonstandard extension used: nameless struct/union
+C:\Users\Lars\Documents\Repos\game-engine-opengl\include\glm\gtc\quaternion.hpp(132): message : see reference to class template instantiation 'glm::tquat<T,P>' being compiled
+C:\Users\Lars\Documents\Repos\game-engine-opengl\src\game-engine\stb_image.h(1,25): warning C4081: expected ':'; found ')'
+C:\Users\Lars\Documents\Repos\game-engine-opengl\src\game-engine\main.cpp(183,22): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Lars\Documents\Repos\game-engine-opengl\src\game-engine\main.cpp(196,14): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Lars\Documents\Repos\game-engine-opengl\src\game-engine\main.cpp(197,14): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Lars\Documents\Repos\game-engine-opengl\src\game-engine\main.cpp(207,12): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Lars\Documents\Repos\game-engine-opengl\src\game-engine\main.cpp(208,12): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Lars\Documents\Repos\game-engine-opengl\src\game-engine\main.cpp(360,13): warning C4244: 'initializing': conversion from 'unsigned int' to 'float', possible loss of data
+C:\Users\Lars\Documents\Repos\game-engine-opengl\src\game-engine\main.cpp(361,13): warning C4244: 'initializing': conversion from 'unsigned int' to 'float', possible loss of data
+C:\Users\Lars\Documents\Repos\game-engine-opengl\src\game-engine\main.cpp(367,11): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Lars\Documents\Repos\game-engine-opengl\src\game-engine\main.cpp(368,11): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Lars\Documents\Repos\game-engine-opengl\src\game-engine\main.cpp(372,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Lars\Documents\Repos\game-engine-opengl\src\game-engine\main.cpp(373,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Lars\Documents\Repos\game-engine-opengl\src\game-engine\main.cpp(374,10): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Lars\Documents\Repos\game-engine-opengl\src\game-engine\main.cpp(375,10): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+glfw3.lib(context.obj) : warning LNK4099: PDB 'glfw.pdb' was not found with 'glfw3.lib(context.obj)' or at 'C:\Users\Lars\Documents\Repos\game-engine-opengl\src\x64\Debug\glfw.pdb'; linking object as if no debug info
+glfw3.lib(init.obj) : warning LNK4099: PDB '' was not found with 'glfw3.lib(init.obj)' or at ''; linking object as if no debug info
 glfw3.lib(input.obj) : warning LNK4099: PDB 'glfw.pdb' was not found with 'glfw3.lib(input.obj)' or at 'C:\Users\Lars\Documents\Repos\game-engine-opengl\src\x64\Debug\glfw.pdb'; linking object as if no debug info
 glfw3.lib(monitor.obj) : warning LNK4099: PDB '' was not found with 'glfw3.lib(monitor.obj)' or at ''; linking object as if no debug info
-glfw3.lib(vulkan.obj) : warning LNK4099: PDB 'glfw.pdb' was not found with 'glfw3.lib(vulkan.obj)' or at 'C:\Users\Lars\Documents\Repos\game-engine-opengl\src\x64\Debug\glfw.pdb'; linking object as if no debug info
+glfw3.lib(vulkan.obj) : warning LNK4099: PDB '' was not found with 'glfw3.lib(vulkan.obj)' or at ''; linking object as if no debug info
 glfw3.lib(window.obj) : warning LNK4099: PDB '' was not found with 'glfw3.lib(window.obj)' or at ''; linking object as if no debug info
-glfw3.lib(win32_init.obj) : warning LNK4099: PDB '' was not found with 'glfw3.lib(win32_init.obj)' or at ''; linking object as if no debug info
+glfw3.lib(win32_init.obj) : warning LNK4099: PDB 'glfw.pdb' was not found with 'glfw3.lib(win32_init.obj)' or at 'C:\Users\Lars\Documents\Repos\game-engine-opengl\src\x64\Debug\glfw.pdb'; linking object as if no debug info
 glfw3.lib(win32_joystick.obj) : warning LNK4099: PDB 'glfw.pdb' was not found with 'glfw3.lib(win32_joystick.obj)' or at 'C:\Users\Lars\Documents\Repos\game-engine-opengl\src\x64\Debug\glfw.pdb'; linking object as if no debug info
 glfw3.lib(win32_monitor.obj) : warning LNK4099: PDB '' was not found with 'glfw3.lib(win32_monitor.obj)' or at ''; linking object as if no debug info
-glfw3.lib(win32_time.obj) : warning LNK4099: PDB '' was not found with 'glfw3.lib(win32_time.obj)' or at ''; linking object as if no debug info
+glfw3.lib(win32_time.obj) : warning LNK4099: PDB 'glfw.pdb' was not found with 'glfw3.lib(win32_time.obj)' or at 'C:\Users\Lars\Documents\Repos\game-engine-opengl\src\x64\Debug\glfw.pdb'; linking object as if no debug info
 glfw3.lib(win32_thread.obj) : warning LNK4099: PDB 'glfw.pdb' was not found with 'glfw3.lib(win32_thread.obj)' or at 'C:\Users\Lars\Documents\Repos\game-engine-opengl\src\x64\Debug\glfw.pdb'; linking object as if no debug info
-glfw3.lib(win32_window.obj) : warning LNK4099: PDB 'glfw.pdb' was not found with 'glfw3.lib(win32_window.obj)' or at 'C:\Users\Lars\Documents\Repos\game-engine-opengl\src\x64\Debug\glfw.pdb'; linking object as if no debug info
+glfw3.lib(win32_window.obj) : warning LNK4099: PDB '' was not found with 'glfw3.lib(win32_window.obj)' or at ''; linking object as if no debug info
 glfw3.lib(wgl_context.obj) : warning LNK4099: PDB '' was not found with 'glfw3.lib(wgl_context.obj)' or at ''; linking object as if no debug info
 glfw3.lib(egl_context.obj) : warning LNK4099: PDB 'glfw.pdb' was not found with 'glfw3.lib(egl_context.obj)' or at 'C:\Users\Lars\Documents\Repos\game-engine-opengl\src\x64\Debug\glfw.pdb'; linking object as if no debug info
 glfw3.lib(osmesa_context.obj) : warning LNK4099: PDB '' was not found with 'glfw3.lib(osmesa_context.obj)' or at ''; linking object as if no debug info

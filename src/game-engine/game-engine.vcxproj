@@ -149,6 +149,8 @@
     <ClCompile Include="glad.c" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Shader.cpp" />
+    <None Include="light.frag" />
+    <None Include="light.vert" />
     <None Include="shader.frag">
       <FileType>Document</FileType>
     </None>
