@@ -3,8 +3,7 @@
 ![image](readme/image.png)
 
 This repository contains an attempt to write a game engine with OpenGL with C++.
-I barely know C++ and OpenGL, so with this project I'm learning those things.
-I do however know GLSL, and how to calculate lighting and all the stuffs.
+I barely know C++ and OpenGL, so with this project I'm learning those things too.
 
 To learn OpenGL the following tutorial is used: https://learnopengl.com.
 
