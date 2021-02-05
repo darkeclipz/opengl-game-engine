@@ -7,6 +7,7 @@ protected:
 	float lastMousePositionX = 0.0f;
 	float lastMousePositionY = 0.0f;
 	bool firstMouseMovement = true;
+
 public:
 	Camera* camera;
 	Controls(Camera* camera = nullptr) 
@@ -77,6 +78,7 @@ public:
 		{
 			camera->pitch = -89.0f;
 		}
+
 		glm::vec3 direction;
 		direction.x = cos(glm::radians(camera->yaw)) * cos(glm::radians(camera->pitch));
 		direction.y = sin(glm::radians(camera->pitch));

@@ -20,6 +20,7 @@ The following functionality has currently been implemented.
  * Mouse handling for a 'FPS style' camera.
  * Mouse scrolling for zooming.
  * A single light with Phong shading.
+ * Materials with an ambient, diffuse, and specular color.
 
 It currently renders 10 different cubes, which come from the same geometry, which is changed with the model matrix before rendering.
 
@@ -30,7 +31,11 @@ Implemented another shader to render the light source, and altered the original 
 
 ![Phong lighting model](readme/image2.png)
 
-Next stop is to implement materials!
+### Materials!
+
+Implemented materials which can be used to set the ambient, diffuse, and specular components of the Phong model.
+
+![Materials](readme/image3.png)
 
 ## Set up
 

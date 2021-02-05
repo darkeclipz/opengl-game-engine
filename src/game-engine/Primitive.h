@@ -1,6 +1,7 @@
 #pragma once
 #include <glm/glm.hpp>
 #include <glad/glad.h>
+#include "Material.h"
 
 class Primitive {
 public:
@@ -99,13 +100,15 @@ public:
 	glm::vec3 scale;
 	glm::vec3 rotation;
 	Primitive primitive;
+	Material material;
+
 	Shape()
 	{
 		position = glm::vec3(0.0f);
 		scale = glm::vec3(1.0f);
 		rotation = glm::vec3(0.0f);
 	}
-	glm::mat4 getModelMatrix()
+	glm::mat4 model_matrix()
 	{
 		glm::mat4 model = glm::mat4(1.0f);
 		model = glm::translate(model, position);
@@ -119,10 +122,23 @@ public:
 
 class Cube : public Shape {
 public:
+	Cube(glm::vec3 position, Material material, glm::vec3 rotation)
+	{
+		this->position = position;
+		this->material = material;
+		this->rotation = rotation;
+	}
+
 	Cube(glm::vec3 position, glm::vec3 rotation = glm::vec3(0.0f, 0.0f, 0.0f))
 	{
 		this->position = position;
 		this->rotation = rotation;
+	}
+
+	Cube(glm::vec3 position, Material material)
+	{
+		this->position = position;
+		this->material = material;
 	}
 
 	void draw()

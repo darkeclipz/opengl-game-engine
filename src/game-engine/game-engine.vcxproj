@@ -145,7 +145,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Camera.cpp" />
     <ClCompile Include="glad.c" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Shader.cpp" />
@@ -157,7 +156,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Camera.h" />
+    <ClInclude Include="Color.h" />
     <ClInclude Include="Controls.h" />
+    <ClInclude Include="Material.h" />
     <ClInclude Include="Primitive.h" />
     <ClInclude Include="GameEngine.h" />
     <ClInclude Include="Shader.h" />

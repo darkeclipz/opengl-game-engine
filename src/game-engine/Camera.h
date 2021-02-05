@@ -21,19 +21,23 @@ public:
 	float aspectRatio;
 	float far;
 	float near;
+
 	Camera(glm::vec3 position = glm::vec3(0.0f), float aspectRatio = 1.0f) : front(glm::vec3(0.0f, 0.0f, -1.0f)), up(glm::vec3(0.0f, 1.0f, 0.0f)), yaw(YAW), pitch(PITCH), fov(ZOOM), near(NEAR), far(FAR)
 	{ 
 		this->position = position;
 		this->aspectRatio = aspectRatio;
 	} 
-	glm::mat4 getViewMatrix()
+
+	glm::mat4 view_matrix()
 	{
 		return glm::lookAt(position, position + front, up);
 	}
-	glm::mat4 getProjectionMatrix()
+
+	glm::mat4 projection_matrix()
 	{
 		return glm::perspective(glm::radians(fov), aspectRatio, 0.1f, 100.0f);
 	}
+
 	void setFieldOfView(float fov)
 	{
 		if (fov < 20.0f)

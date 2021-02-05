@@ -6,7 +6,7 @@
 
 class Texture {
 public:
-	static unsigned int Load(std::string path, bool flipY = false)
+	static unsigned int load(std::string path, bool flipY = false)
 	{
 		// Load a texture
 		unsigned int texture;

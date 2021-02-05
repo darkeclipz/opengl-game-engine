@@ -13,18 +13,18 @@ C:\Users\Lars\Documents\Repos\game-engine-opengl\include\glm\detail\type_vec4.hp
 C:\Users\Lars\Documents\Repos\game-engine-opengl\include\glm\detail\type_vec4.hpp(47,1): warning C4201: nonstandard extension used: nameless struct/union
 C:\Users\Lars\Documents\Repos\game-engine-opengl\include\glm\gtc\quaternion.hpp(56,1): warning C4201: nonstandard extension used: nameless struct/union
 C:\Users\Lars\Documents\Repos\game-engine-opengl\include\glm\gtc\quaternion.hpp(132): message : see reference to class template instantiation 'glm::tquat<T,P>' being compiled
-C:\Users\Lars\Documents\Repos\game-engine-opengl\src\game-engine\Camera.h(37,28): warning C4458: declaration of 'fov' hides class member
+C:\Users\Lars\Documents\Repos\game-engine-opengl\src\game-engine\Camera.h(41,28): warning C4458: declaration of 'fov' hides class member
 C:\Users\Lars\Documents\Repos\game-engine-opengl\src\game-engine\Camera.h(20,8): message : see declaration of 'Camera::fov'
 C:\Users\Lars\Documents\Repos\game-engine-opengl\src\game-engine\stb_image.h(1,25): warning C4081: expected ':'; found ')'
-C:\Users\Lars\Documents\Repos\game-engine-opengl\src\game-engine\Controls.h(55,25): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
 C:\Users\Lars\Documents\Repos\game-engine-opengl\src\game-engine\Controls.h(56,25): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\Lars\Documents\Repos\game-engine-opengl\src\game-engine\Controls.h(60,17): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Lars\Documents\Repos\game-engine-opengl\src\game-engine\Controls.h(57,25): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
 C:\Users\Lars\Documents\Repos\game-engine-opengl\src\game-engine\Controls.h(61,17): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-C:\Users\Lars\Documents\Repos\game-engine-opengl\src\game-engine\Controls.h(62,24): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Lars\Documents\Repos\game-engine-opengl\src\game-engine\Controls.h(62,17): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
 C:\Users\Lars\Documents\Repos\game-engine-opengl\src\game-engine\Controls.h(63,24): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\Lars\Documents\Repos\game-engine-opengl\src\game-engine\Controls.h(51,31): warning C4100: 'window': unreferenced formal parameter
-C:\Users\Lars\Documents\Repos\game-engine-opengl\src\game-engine\Controls.h(87,47): warning C4100: 'xoffset': unreferenced formal parameter
-C:\Users\Lars\Documents\Repos\game-engine-opengl\src\game-engine\Controls.h(87,32): warning C4100: 'window': unreferenced formal parameter
+C:\Users\Lars\Documents\Repos\game-engine-opengl\src\game-engine\Controls.h(64,24): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Lars\Documents\Repos\game-engine-opengl\src\game-engine\Controls.h(52,31): warning C4100: 'window': unreferenced formal parameter
+C:\Users\Lars\Documents\Repos\game-engine-opengl\src\game-engine\Controls.h(89,47): warning C4100: 'xoffset': unreferenced formal parameter
+C:\Users\Lars\Documents\Repos\game-engine-opengl\src\game-engine\Controls.h(89,32): warning C4100: 'window': unreferenced formal parameter
 C:\Users\Lars\Documents\Repos\game-engine-opengl\src\game-engine\GameEngine.h(73,23): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
 C:\Users\Lars\Documents\Repos\game-engine-opengl\src\game-engine\GameEngine.h(89,13): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
 C:\Users\Lars\Documents\Repos\game-engine-opengl\src\game-engine\GameEngine.h(90,13): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
