@@ -24,8 +24,8 @@ The following functionality has currently been implemented.
 
 It currently renders 10 different cubes, which come from the same geometry, which is changed with the model matrix before rendering.
 
-# Updates
-## Lights & Phong lighting model
+## Updates
+### Lights & Phong lighting model
 
 Implemented another shader to render the light source, and altered the original shader to use a Phong lighting model. The shading is based on the light and object color.
 
