@@ -3,12 +3,12 @@
 #include <glad/glad.h>
 #include "Material.h"
 
-class Primitive {
+class Geometry {
 public:
 	unsigned int VBO;
 	unsigned int VAO;
 	unsigned int EBO;
-	~Primitive()
+	~Geometry()
 	{
 		glDeleteVertexArrays(1, &VAO);
 		glDeleteBuffers(1, &VBO);
@@ -21,9 +21,9 @@ public:
 	}
 };
 
-class CubePrimitive : public Primitive {
+class CubeGeometry : public Geometry {
 public:
-	CubePrimitive() {
+	CubeGeometry() {
 		initialize();
 	}
 	void initialize() 
@@ -94,15 +94,34 @@ public:
 	}
 };
 
-class Shape {
+class GameObject {
 public:
 	glm::vec3 position;
 	glm::vec3 scale;
 	glm::vec3 rotation;
-	Primitive primitive;
+	Geometry geometry;
 	Material material;
+	GameObject(glm::vec3 position, Material material, glm::vec3 rotation)
+	{
+		this->position = position;
+		this->material = material;
+		this->rotation = rotation;
+	}
 
-	Shape()
+	GameObject(glm::vec3 position, glm::vec3 rotation = glm::vec3(0.0f, 0.0f, 0.0f))
+	{
+		this->position = position;
+		this->rotation = rotation;
+		this->scale = glm::vec3(1.0f);
+	}
+
+	GameObject(glm::vec3 position, Material material)
+	{
+		this->position = position;
+		this->scale = glm::vec3(1.0f);
+		this->material = material;
+	}
+	GameObject()
 	{
 		position = glm::vec3(0.0f);
 		scale = glm::vec3(1.0f);
@@ -118,40 +137,17 @@ public:
 		model = glm::rotate(model, rotation.z, glm::vec3(0.0f, 0.0f, 1.0f));
 		return model;
 	}
-};
-
-class Cube : public Shape {
-public:
-	Cube(glm::vec3 position, Material material, glm::vec3 rotation)
-	{
-		this->position = position;
-		this->material = material;
-		this->rotation = rotation;
-	}
-
-	Cube(glm::vec3 position, glm::vec3 rotation = glm::vec3(0.0f, 0.0f, 0.0f))
-	{
-		this->position = position;
-		this->rotation = rotation;
-	}
-
-	Cube(glm::vec3 position, Material material)
-	{
-		this->position = position;
-		this->material = material;
-	}
-
 	void draw()
 	{
 		glDrawArrays(GL_TRIANGLES, 0, 36);
 	}
 };
 
-class Light : public Shape {
+class Light : public GameObject {
 public:
 	glm::vec3 color;
 	unsigned int VAO;
-	Light(Primitive& primitive, glm::vec3 position, glm::vec3 color)
+	Light(Geometry& primitive, glm::vec3 position, glm::vec3 color)
 	{
 		this->position = position;
 		this->color = color;

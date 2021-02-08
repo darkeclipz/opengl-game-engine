@@ -39,8 +39,8 @@ public:
 		shader.use();
 		shader.set_int("iChannel0", 0);
 
-		CubePrimitive cubePrimitive;
-		Light light(cubePrimitive, glm::vec3(0.0f), Color::coral);
+		CubeGeometry cubeGeometry;
+		Light light(cubeGeometry, glm::vec3(0.0f), Color::coral);
 		light.scale = glm::vec3(0.2f);
 
 		// Load light shader
@@ -48,24 +48,24 @@ public:
 
 		// glPolygonMode(GL_FRONT_AND_BACK, GL_LINE
 
-		Cube cubes[] =
+		GameObject cubes[] =
 		{
-			Cube(glm::vec3(0.0f,  0.0f,  5.0f), Material::emerald),
-			Cube(glm::vec3(2.0f,  5.0f, -15.0f), Material::pearl),
-			Cube(glm::vec3(-1.5f, -2.2f, -2.5f), Material::bronze),
-			Cube(glm::vec3(-3.8f, -2.0f, -12.3f), Material::gold),
-			Cube(glm::vec3(2.4f, -0.4f, -3.5f), Material::chrome),
-			Cube(glm::vec3(-1.7f,  3.0f, -7.5f), Material::cyan_plastic),
-			Cube(glm::vec3(1.3f, -2.0f, -2.5f), Material::red_plastic),
-			Cube(glm::vec3(1.5f,  2.0f, -2.5f), Material::green_rubber),
-			Cube(glm::vec3(1.5f,  0.2f, -1.5f), Material::yellow_rubber),
-			Cube(glm::vec3(-1.3f,  1.0f, -1.5f), Material::brass)
+			GameObject(glm::vec3(0.0f,  0.0f,  5.0f), Material::emerald),
+			GameObject(glm::vec3(2.0f,  5.0f, -15.0f), Material::pearl),
+			GameObject(glm::vec3(-1.5f, -2.2f, -2.5f), Material::bronze),
+			GameObject(glm::vec3(-3.8f, -2.0f, -12.3f), Material::gold),
+			GameObject(glm::vec3(2.4f, -0.4f, -3.5f), Material::chrome),
+			GameObject(glm::vec3(-1.7f,  3.0f, -7.5f), Material::cyan_plastic),
+			GameObject(glm::vec3(1.3f, -2.0f, -2.5f), Material::red_plastic),
+			GameObject(glm::vec3(1.5f,  2.0f, -2.5f), Material::green_rubber),
+			GameObject(glm::vec3(1.5f,  0.2f, -1.5f), Material::yellow_rubber),
+			GameObject(glm::vec3(-1.3f,  1.0f, -1.5f), Material::brass)
 		};
 		for (unsigned int i = 0; i < 10; i++)
 		{
 			float angle = glm::radians(20.0f * i);
 			cubes[i].rotation = glm::vec3(angle, 0.3f * angle, 0.5f * angle);
-			cubes[i].primitive = cubePrimitive;
+			cubes[i].geometry = cubeGeometry;
 		}
 
 		while (!glfwWindowShouldClose(window))
@@ -98,7 +98,7 @@ public:
 			shader.set_vec3("viewPos", camera.position);
 			shader.set_float("iTime", (float)glfwGetTime());
 			shader.set_vec3("lightColor", Color::white);
-			cubes[0].primitive.bind();
+			cubes[0].geometry.bind();
 			for (unsigned int i = 0; i < 10; i++)
 			{
 				shader.set_vec3("material.ambient", cubes[i].material.ambient);
